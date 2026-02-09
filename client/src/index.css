@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #0F172A;
+  --bg-panel: #1E293B;
+  --gold: #F59E0B;
+  --green-felt: #15803D;
+  --red-roulette: #DC2626;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+/* 3D Casino Buttons */
+.btn-3d {
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+  box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.4), 0px 5px 10px 0px rgba(0,0,0,0.5), inset 0px 1px 0px 0px rgba(255,255,255,0.4);
+}
+.btn-3d:active { transform: translateY(4px); box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4), inset 0px 1px 0px 0px rgba(255,255,255,0.4); }
+
+.btn-gold { background: linear-gradient(180deg, #fbbf24 0%, #d97706 100%); color: #1e293b; border-bottom: 4px solid #92400e; }
+.btn-green { background: linear-gradient(180deg, #4ade80 0%, #16a34a 100%); color: #064e3b; border-bottom: 4px solid #14532d; }
+.btn-red { background: linear-gradient(180deg, #f87171 0%, #dc2626 100%); color: white; border-bottom: 4px solid #7f1d1d; }
+
+.panel-glass {
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
