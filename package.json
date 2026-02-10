@@ -2,11 +2,11 @@
   "name": "railway-casino",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build && cd .. && npm install --prefix server",
-    "postinstall": "npm run build"
-  },
+  "start": "node server/index.js",
+  "build": "cd client && rm -rf node_modules && npm install && npm run build && cd .. && npm install --prefix server"
+}
   "engines": {
     "node": "18.x"
   }
+
 }
